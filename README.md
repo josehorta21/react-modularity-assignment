@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# React Modularity Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
+This project demonstrates **component modularity in React** using both **default exports/imports** and **named exports/imports**.  
+The application is built with multiple reusable components to show proper project structure and code organization.
 
-## Available Scripts
+This assignment focuses on:
 
-In the project directory, you can run:
+- Component-based architecture
+- Default vs Named exports/imports
+- Shared components
+- Test cases (normal and edge cases)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 Objective
+To gain hands-on experience with component modularity in React by creating a small application that utilizes both default and named exports/imports.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧱 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+src/
+├── components/
+│ ├── Header.js (default export)
+│ ├── Footer.js (default export)
+│ ├── ContentA.js (named export)
+│ ├── ContentB.js (named export)
+│ └── SharedComponents.js (named export: Button)
+│
+├── App.js
+├── App.test.js
+└── setupTests.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Features
 
-### `npm run eject`
+### ✅ Default Exports
+- Header component
+- Footer component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ✅ Named Exports
+- ContentA component
+- ContentB component
+- Shared Button component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ Shared Component
+A reusable Button component used across multiple components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ✅ Test Cases
+The project includes automated tests covering:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Normal behavior
+- Edge cases
+- Component interaction
 
-## Learn More
+Total tests:
+- 3 normal cases
+- 3 edge cases
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 How to Run the Project
 
-### Code Splitting
+### Install dependencies
+```bash
+npm install
+Start development server
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+App runs at:
 
-### Analyzing the Bundle Size
+http://localhost:3000
+🧪 Running Tests
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The test suite verifies:
 
-### Making a Progressive Web App
+Component rendering
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Button behavior
 
-### Advanced Configuration
+Input handling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Edge cases
 
-### Deployment
+📚 Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+React
 
-### `npm run build` fails to minify
+JavaScript (ES6)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create React App
+
+React Testing Library
+
+Jest
+
+🎥 Demonstration
+
+A video demonstration shows:
+
+Application functionality
+
+Component structure
+
+Test execution
